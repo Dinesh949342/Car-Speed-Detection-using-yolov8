@@ -1,0 +1,81 @@
+{% extends 'Admins/AdminBase.html' %}
+{% load static %}
+{% block contents %}
+<style>
+    .custom-card {
+        min-height: 30px; /* Adjust this value as needed */
+    }
+</style>
+<section class="hero-section animate__animated animate__zoomIn">
+    <h1 class="mb-4">Welcome to Car Speed Detection</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Advanced Technology</h5>
+                    <p class="card-text">
+                        Leverage cutting-edge computer vision and deep learning algorithms for accurate speed detection.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Real-Time Monitoring</h5>
+                    <p class="card-text">
+                        Analyze video footage in real-time to identify speeding vehicles and ensure compliance with traffic laws.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Road Safety</h5>
+                    <p class="card-text">
+                        Enhance traffic management and reduce accidents by monitoring vehicle speeds effectively.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">User-Friendly Interface</h5>
+                    <p class="card-text">
+                        A simple and intuitive dashboard for easy operation and quick insights.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Data-Driven Insights</h5>
+                    <p class="card-text">
+                        Generate detailed reports and analytics for effective traffic policy implementation.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Scalable Solution</h5>
+                    <p class="card-text">
+                        Designed to scale for city-wide traffic monitoring or individual road sections.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

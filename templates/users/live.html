@@ -1,0 +1,68 @@
+{% extends 'Users/UserBase.html' %}
+{% load static %}
+{% block contents %}
+
+<style>
+    .live-stream-section {
+        margin: 50px auto;
+        max-width: 1000px;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .live-stream-section h1 {
+        font-family: "Abril Fatface", serif;
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .live-stream-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .live-stream {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .stream-info {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f8f9fa;
+        border-radius: 5px;
+    }
+
+    .stream-info p {
+        margin: 5px 0;
+        color: #666;
+    }
+</style>
+
+<div class="container">
+    <div class="live-stream-section animate__animated animate__fadeIn">
+        <h1>Live Car Speed Detection</h1>
+        
+        <div class="live-stream-container">
+            <img src="{% url 'live_feed' %}" alt="Live Stream" class="live-stream">
+        </div>
+
+        <div class="stream-info">
+            <p><strong>Status:</strong> Active</p>
+            <p><strong>Detection:</strong> Cars, trucks, and other vehicles</p>
+            <p><strong>Model:</strong> YOLOv8</p>
+            <p><strong>Note:</strong> Speed calculations are approximate and depend on camera positioning and calibration.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'Users/UserBase.html' %}
+{% load static %}
+{% block contents %}
+<section class="hero-section animate__animated animate__zoomIn">
+    <h1 class="mb-4">About the Car Speed Detection Project</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow" style="min-height: 250px; width: 100%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Project Overview</h5>
+                    <p class="card-text">
+                        A cutting-edge solution utilizing deep learning to detect car speeds in video footage accurately.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col">
+            <div class="card bg-dark text-white border-0 shadow" style="min-height: 250px; width: 100%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">How It Works</h5>
+                    <p class="card-text">
+                        Upload a video of road traffic. The system processes it using YOLOv8 and estimates the speed of moving vehicles.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col">
+            <div class="card bg-dark text-white border-0 shadow" style="min-height: 10px; width: 100%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Key Features</h5>
+                    <p class="card-text">
+                        Real-time processing, intuitive interface, and reliable detection for traffic safety applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow" style="min-height: 250px; width: 100%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Technologies Used</h5>
+                    <p class="card-text">
+                        Built using Python, Django, and YOLOv8, combined with advanced computer vision techniques.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow" style="min-height: 250px; width: 100%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Applications</h5>
+                    <p class="card-text">
+                        Useful for traffic law enforcement, accident prevention, and city traffic monitoring.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col">
+            <div class="card bg-dark text-white h-100 border-0 shadow" style="min-height: 250px; width: 100%;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Future Scope</h5>
+                    <p class="card-text">
+                        Enhance the system for multi-camera setups, predictive analysis, and integration with IoT devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

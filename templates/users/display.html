@@ -1,0 +1,62 @@
+{% extends 'Users/UserBase.html' %}
+{% load static %}
+{% block contents %}
+
+<style>
+    .result-section {
+        margin: 50px auto;
+        max-width: 800px;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .result-section h1 {
+        font-family: "Abril Fatface", serif;
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .processed-image {
+        max-width: 100%;
+        border-radius: 5px;
+        margin: 20px 0;
+    }
+
+    .btn-back {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #1abc9c;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .btn-back:hover {
+        background-color: #16a085;
+        color: #ffffff;
+        text-decoration: none;
+    }
+</style>
+
+<div class="container">
+    <div class="result-section animate__animated animate__fadeIn">
+        <h1>Detection Results</h1>
+        {% if error_message %}
+            <div class="alert alert-danger">
+                {{ error_message }}
+            </div>
+        {% else %}
+            <img src="/media/processed_images/{{ filename }}" alt="Processed Image" class="processed-image">
+        {% endif %}
+        <div class="text-center">
+            <a href="{% url 'upload_image' %}" class="btn-back">Upload Another Image</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
